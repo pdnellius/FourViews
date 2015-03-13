@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8xq-pX-hHh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FourViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iLE-Yj-GjT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gj0-EV-whK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZ2-HH-4h9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Campbell's" translatesAutoresizingMaskIntoConstraints="NO" id="I18-Xj-TJT">
+                                <rect key="frame" x="16" y="64" width="568" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsu-gb-lK7">
+                                <rect key="frame" x="244" y="279.5" width="113" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Warhol Me">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2W5-yH-ygj" kind="show" id="yTv-0v-RLn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I18-Xj-TJT" firstAttribute="leading" secondItem="gZ2-HH-4h9" secondAttribute="leadingMargin" id="8Go-nr-Jok"/>
+                            <constraint firstAttribute="centerX" secondItem="wsu-gb-lK7" secondAttribute="centerX" id="FaB-xu-k5g"/>
+                            <constraint firstItem="I18-Xj-TJT" firstAttribute="top" secondItem="iLE-Yj-GjT" secondAttribute="bottom" id="SNF-KL-aFo"/>
+                            <constraint firstAttribute="centerY" secondItem="wsu-gb-lK7" secondAttribute="centerY" id="gFQ-qj-YUJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="I18-Xj-TJT" secondAttribute="bottom" id="p5C-Am-SgI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I18-Xj-TJT" secondAttribute="trailing" id="uMZ-tL-QxX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Campbell's" id="fGm-cO-mNq"/>
+                    <navigationItem key="navigationItem" id="uUx-Se-Vi0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="deA-am-vuo">
+            <objects>
+                <navigationController id="8xq-pX-hHh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oKE-Oo-mZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="WfF-zt-hSy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZX-tR-qKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-414" y="340"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="c2H-mp-JTd">
+            <objects>
+                <viewController id="Ide-pH-Vdc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dh-dz-75a"/>
+                        <viewControllerLayoutGuide type="bottom" id="DBc-Bw-NRW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lgh-8M-lxh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nanner" translatesAutoresizingMaskIntoConstraints="NO" id="cH2-Yk-c2d">
+                                <rect key="frame" x="16" y="64" width="568" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-7F-7BH">
+                                <rect key="frame" x="240" y="200" width="121" height="30"/>
+                                <state key="normal" title="Show me Warhol!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RbD-ca-fvN" kind="show" id="Dco-1p-7fN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XFs-7F-7BH" secondAttribute="centerX" constant="-0.5" id="Er0-Aj-Imh"/>
+                            <constraint firstItem="cH2-Yk-c2d" firstAttribute="leading" secondItem="lgh-8M-lxh" secondAttribute="leadingMargin" id="OsI-dw-Acy"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cH2-Yk-c2d" secondAttribute="bottom" id="PQj-cH-QaH"/>
+                            <constraint firstItem="cH2-Yk-c2d" firstAttribute="top" secondItem="6dh-dz-75a" secondAttribute="bottom" id="chO-4N-Kn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cH2-Yk-c2d" secondAttribute="trailing" id="dGp-Li-LQE"/>
+                            <constraint firstAttribute="centerY" secondItem="XFs-7F-7BH" secondAttribute="centerY" constant="85" id="qWz-yB-kc4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="cKz-FF-bj9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKC-4S-fsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789" y="335"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tlq-vO-K8p">
+            <objects>
+                <viewController id="RbD-ca-fvN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bjB-Sz-t6V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Atf-mq-6Re"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVx-ud-6U1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-SU-irk">
+                                <rect key="frame" x="16" y="64" width="568" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vTo-FK-307">
+                                <rect key="frame" x="132.5" y="279.5" width="336" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="MORE WARHOL!!!!!!!!! OMGZZZ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="XT4-So-C82"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FJZ-SU-irk" secondAttribute="trailing" id="CLI-cX-zA9"/>
+                            <constraint firstItem="FJZ-SU-irk" firstAttribute="leading" secondItem="cVx-ud-6U1" secondAttribute="leadingMargin" id="dhj-uS-ctN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FJZ-SU-irk" secondAttribute="bottom" id="e2g-ht-hZf"/>
+                            <constraint firstItem="FJZ-SU-irk" firstAttribute="top" secondItem="bjB-Sz-t6V" secondAttribute="bottom" id="f8a-4K-Loy"/>
+                            <constraint firstAttribute="centerX" secondItem="vTo-FK-307" secondAttribute="centerX" id="hRb-7c-yN9"/>
+                            <constraint firstAttribute="centerY" secondItem="vTo-FK-307" secondAttribute="centerY" id="wqP-Sw-Bwa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3y-d3-ZUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2504" y="340"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="poY-sM-fwN">
+            <objects>
+                <viewController id="2W5-yH-ygj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ep3-JC-gmj"/>
+                        <viewControllerLayoutGuide type="bottom" id="IZd-Mu-hq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E8Q-Y0-O3R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marilyn" translatesAutoresizingMaskIntoConstraints="NO" id="cM7-Yy-KpQ">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDu-xQ-0XL">
+                                <rect key="frame" x="141" y="332" width="178" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Show me a bannana!">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ide-pH-Vdc" kind="show" id="XTy-KZ-WqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cM7-Yy-KpQ" secondAttribute="trailing" id="Q3K-ZB-EQm"/>
+                            <constraint firstItem="lDu-xQ-0XL" firstAttribute="leading" secondItem="E8Q-Y0-O3R" secondAttribute="leadingMargin" constant="125" id="U7l-Pz-jUs"/>
+                            <constraint firstItem="cM7-Yy-KpQ" firstAttribute="leading" secondItem="E8Q-Y0-O3R" secondAttribute="leadingMargin" id="duB-9F-cND"/>
+                            <constraint firstItem="cM7-Yy-KpQ" firstAttribute="top" secondItem="E8Q-Y0-O3R" secondAttribute="topMargin" id="kOn-kb-5ra"/>
+                            <constraint firstItem="IZd-Mu-hq8" firstAttribute="top" secondItem="lDu-xQ-0XL" secondAttribute="bottom" constant="233" id="lsR-Yf-k3v"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cM7-Yy-KpQ" secondAttribute="bottom" id="tm2-rb-LeK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Oa2-9H-Ay4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvY-Zg-390" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="335"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Campbell's" width="257" height="387"/>
+        <image name="Marilyn" width="770" height="766"/>
+        <image name="Nanner" width="1417" height="1417"/>
+        <image name="Portrait" width="600" height="480"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XT4-So-C82"/>
+    </inferredMetricsTieBreakers>
+</document>
